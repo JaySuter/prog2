@@ -1,0 +1,5 @@
+Warenkorb 
+Meine Projekt-Idee ist ein Warenkorb zu programmieren, bei dem ein Nutzer Waren aussuchen kann (Dateneingabe),
+Die Daten werden dann im Warenkorb gespeichert (Datenspeicherung),
+im Warenkorb werden die ausgesuchten Waren zusammengerechnet 
+(Datenverarbeitung) und schliesslich wird ein Gesammtpreis der ausgewählten Waren ausgegeben (Datenausgabe). 
