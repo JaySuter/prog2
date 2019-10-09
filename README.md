@@ -19,12 +19,18 @@ Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlage
 Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Zeit- und Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln, nach Relevanz und Datum zu sortieren und abhacken zu können. 
 Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirationen und Ideen und Terminen (z.B. mittels integriertem Kalender), erstellen zu können. 
 
-### Anforderungen
+### Workflow: 
 
-*	Erstellen verschiedener Listen
-*	Hinzufügen von Elementen zu einer Liste
-*	Aktualisieren eines Elements in der Liste
-*	Löschen eines Elements aus der Liste
+* #### Dateneingabe
+  *	Erstellen verschiedener Listen
+  *	Hinzufügen von Elementen zu einer Liste
+  
+* #### Datenverarbeitung / Speicherung
+  *	Speichern der erstellten Listen / Elemente 
+  * Aktualisieren eines Elements in der Liste
+  *	Löschen eines Elements aus der Liste
+  
+* #### Datenausgabe 
 *	Ausgabe der Listen als Word- oder PDF-Dokument zum Downloaden oder Drucken 
 
 
