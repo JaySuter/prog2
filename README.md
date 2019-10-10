@@ -34,7 +34,7 @@ Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirat
   * Aktualisieren eines Elements in der Liste
   *	Löschen eines Elements aus der Liste
   
-! (doku/flowchart_todolist.png)
+! [](doku/flowchart_todolist.png)
   
   
 * #### Datenausgabe 
