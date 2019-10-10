@@ -26,7 +26,10 @@ Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirat
   *	Erstellen verschiedener Listen
   *	Hinzufügen von Elementen zu einer Liste
 
-![Erstellen von neuem Task in ToDo-Liste](doku/flowchart_todolist.png)
+  #### Erstellen eines neuen tasks 
+  ![](doku/flowchart_todolist.png)
+
+
 
 * #### Datenverarbeitung / Speicherung
   *	Speichern der erstellten Listen / Elemente 
