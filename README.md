@@ -27,11 +27,8 @@ Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirat
   *	Hinzufügen von Elementen zu einer Liste
 
 #### Flussdiagramm: Erstellen von neuem Task in ToDo-Liste
-! 
 
 
-
-  
 * #### Datenverarbeitung / Speicherung
   *	Speichern der erstellten Listen / Elemente 
   * Aktualisieren eines Elements in der Liste
