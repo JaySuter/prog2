@@ -27,18 +27,16 @@ Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirat
   *	Hinzufügen von Elementen zu einer Liste
 
 #### Flussdiagramm: Erstellen von neuem Task in ToDo-Liste
-
+![](doku/flowchart_todolist.png)
 
 * #### Datenverarbeitung / Speicherung
   *	Speichern der erstellten Listen / Elemente 
   * Aktualisieren eines Elements in der Liste
   *	Löschen eines Elements aus der Liste
   
-![](doku/flowchart_todolist.png)
-  
   
 * #### Datenausgabe 
-*	Ausgabe der Listen als Word- oder PDF-Dokument zum Downloaden oder Drucken 
+  *	Ausgabe der Listen als Word- oder PDF-Dokument zum Downloaden oder Drucken 
 
 
 
