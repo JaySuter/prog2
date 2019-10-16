@@ -39,5 +39,3 @@ Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirat
   
 * #### Datenausgabe 
   *	Ausgabe der Listen als Word- oder PDF-Dokument zum Downloaden oder Drucken 
-
-Test commit
