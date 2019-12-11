@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <title>To Do list</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <!--Style muss immer in der Head-Section sein-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+  <!--Style muss immer in der Head-Section sein-->
  
     <style type="text/css"></style>
-    <body style="background-color:paleturquoise;">
-  
-        </body>
         
-    </style>
   
   </head>
   
   <body>
     <div class="container">
       <h1 class="text-center display-1">WHAT'S ON YOUR MIND?</h1>
-      <h2 class="text-center display-4">ToDo List</h2>
+      <p class="lead text-center"> Welcome to my ToDo List Application, where u can free your mind. :)</p>
       <div class="row">
-          <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What to do?">
+  <!--mx-auto zentriert die Einfüge-Box-->
+          <form class="col-8 mx-auto">
+              <div class="input-group">
+  <!--Input-group = Button kommt rechts neben Einfüge-Box-->
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What to do?"> 
+                <span><button type="submit" class="btn btn-primary">Submit</button></span>
+  <!--Span (Inline-Element) hilft mir, um Elemente für Stylingzwecke zu gruppieren-->
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              
             </form>
 
       </div>
