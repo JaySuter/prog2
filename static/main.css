@@ -1,8 +1,18 @@
 body {
-    background-color: yellow;
+    background-image:url(mountains.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    font-size: 1.5rem;
   }
 
 h1 {
     color: white;
+    margin-top: 13rem;
+    margin-bottom: 0px;
    
+}
+.lead {
+    font-size: 2rem; 
 }
