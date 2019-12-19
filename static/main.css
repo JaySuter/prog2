@@ -12,16 +12,49 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     top: 0;
-    bottom: 100;
+    bottom: 0;
     position: absolute;
   }
 
 h1 {
     color: white;
-    margin-top: 13rem;
-    margin-bottom: 0px;
-   
+    margin-top: 14rem;
+    margin-bottom: 0px;   
 }
+
+p {
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 10px;
+
+}
+
+li {
+    color: white;
+
+}
+
+
+ul {
+  list-style: none;
+  margin-top: 2rem;
+  border-top: 2px solid white;
+  /* Damit die list items nicht angezeigt werden, solange man nichts eingegeben hat */
+  /* display: none; */
+}
+li {
+  border-bottom: 1px solid white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+input[type=checkbox] {
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+}
+
 .lead {
     font-size: 2rem; 
 }
