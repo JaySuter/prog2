@@ -15,10 +15,12 @@ Will man eine vollumfängliche Applikation, die auf die eigenen Bedürfnisse ang
 Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlagen zum Programmieren einer Applikation aneignen und eine ToDo-Listen mit Features nach meinen Wünschen konstruieren. 
 
 
+
 ### Funktion / Projektidee  
 
 Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks verschoben werden. 
 Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. 
+
 
 
 ### Workflow
@@ -41,6 +43,7 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
   *	Erstellter Task anzeigen. 
   * Prozentanzahl der zu erledigen Tasks und der erledigten Tasks angezeigen. 
 
+ 
  
  ### Benutzeranleitung 
  
