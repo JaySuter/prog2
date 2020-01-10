@@ -23,12 +23,36 @@ def get_count_done(todolist):
     return int(len(todolist["done"]))
 
 def get_percent_open(count_open, count_total):
+    """
+    Get the percentage of all open todo items
+
+    Args:
+        int: number of open todos
+        int: number of all todos
+
+    Returns:
+        int: the percentage of the open todos
+        or
+        str: if there are no todos, "--" will be returned
+    """
     if count_total > 0:
         return int(round(count_open / count_total * 100, 0))
     else:
         return "--"
 
 def get_percent_done(count_done, count_total):
+    """
+    Get the percentage of all done todo items
+
+    Args:
+        int: number of done todos
+        int: number of all todos
+
+    Returns:
+        int: the percentage of the done todos
+        or
+        str: if there are no todos, "--" will be returned
+    """
     if count_total > 0:
         return int(round(count_done / count_total * 100, 0))
     else:
