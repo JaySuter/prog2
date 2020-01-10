@@ -1,6 +1,6 @@
 # prog2
 
-## Meine Projekt-Idee: ToDo-Liste "What's on your Mind?"
+## ToDo-Liste "What's on your Mind?"
 
 
 ### Ausgangslage
@@ -69,6 +69,9 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
     
  5. Will der Nutzer einen Task von der Done-Liste zurück zur ToDo-Liste verschieben, kann er ganz einfach den Button "Mark as 
     undone" drücken und der Task erscheint wieder auf der Open-Liste. 
+    
+    ![todo_5](https://user-images.githubusercontent.com/55581677/72162629-9aae2f00-33c2-11ea-9157-a5803a19236b.jpg)
+    
     
     
  
