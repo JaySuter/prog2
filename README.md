@@ -21,7 +21,7 @@ Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein.
 Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. 
 
 
-### Workflow: 
+### Workflow
 
 ##### Task erstellen, speichern und als erledigt markieren 
   ![flowchart](https://user-images.githubusercontent.com/55581677/72160268-53be3a80-33be-11ea-9975-a31ec29f4a05.png)
