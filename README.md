@@ -17,25 +17,25 @@ Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlage
 
 ### Funktion / Projektidee  
 
-Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Zeit- und Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln, nach Relevanz und Datum zu sortieren und abhacken zu können. 
-Des Weiteren sollte der Benutzer die Möglichkeit haben, eine Liste mit Inspirationen und Ideen und Terminen (z.B. mittels integriertem Kalender), erstellen zu können. 
+Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks verschoben werden. 
+Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. 
 
 ### Workflow: 
 
 * #### Dateneingabe
-  *	Erstellen verschiedener Listen
-  *	Hinzufügen von Elementen zu einer Liste
+  *	Erstellen verschiedener Aufgaben / Tasks 
 
   ##### Erstellen eines neuen tasks 
-  ![](doku/flowchart_todolist.png)
-
+  ![](doku/Flowchart.png)
 
 
 * #### Datenverarbeitung / Speicherung
-  *	Speichern der erstellten Listen / Elemente 
-  * Aktualisieren eines Elements in der Liste
-  *	Löschen eines Elements aus der Liste
+  *	Speichern der erstellten Tasks (submit)
+  * Ein erledigter Task mit "Done" markieren --> Wird auf Done Liste verschoben. 
+  * Berechnung des Prozentsatzes wieviele Tasks schon erledigt sind oder noch zu erledigen sind. 
   
   
 * #### Datenausgabe 
-  *	Ausgabe der Listen als Word- oder PDF-Dokument zum Downloaden oder Drucken
+  *	Erstellter Task anzeigen. 
+  * Prozentanzahl der zu erledigen Tasks und der erledigten Tasks angezeigen. 
+
