@@ -38,8 +38,12 @@ def home():
     count_open = statistics.get_count_open(todolist)
     count_done = statistics.get_count_done(todolist)
     count_total = int(count_open+count_done)
-    percent_open = int(round(count_open / count_total * 100, 0))
-    percent_done = int(round(count_done / count_total * 100, 0))
+    if count_total > 0:
+        percent_open = int(round(count_open / count_total * 100, 0))
+        percent_done = int(round(count_done / count_total * 100, 0))
+    else:
+        percent_done = "--"
+        percent_open = "--"
 
     return render_template('index.html', open_todos=todolist["open"], error=error_message, count_total=count_total, count_open=count_open, count_done=count_done, percent_open=percent_open, percent_done=percent_done)
     
@@ -59,8 +63,12 @@ def done_todos():
     count_open = statistics.get_count_open(todolist)
     count_done = statistics.get_count_done(todolist)
     count_total = int(count_open+count_done)
-    percent_open = int(round(count_open / count_total * 100, 0))
-    percent_done = int(round(count_done / count_total * 100, 0))
+    if count_total > 0:
+        percent_open = int(round(count_open / count_total * 100, 0))
+        percent_done = int(round(count_done / count_total * 100, 0))
+    else:
+        percent_done = "--"
+        percent_open = "--"
 
     return render_template('done_todos.html', done_todos=todolist["done"], count_total=count_total, count_open=count_open, count_done=count_done, percent_open=percent_open, percent_done=percent_done)
 
