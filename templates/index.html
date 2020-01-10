@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>To Do list</title>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-
-  <!--Style muss immer in der Head-Section sein-->
+ {% include "block_html_head.html" %}
  
-  </head>
-  
   <body>
 <!-- div class="hero" macht einen (transparenten) Filter über das Hintergrundbild. So wirkt es etwas abgedunkelt.-->
     <div class="hero">
@@ -19,11 +8,15 @@
           <div class="row">
             <div class="col-8 mx-auto">
               <div class="row">
-                <div class="col-4 mx-auto"><a class="navlink active" href="{{ url_for('home') }}">OPEN</a></div>
-                <div class="col-4"><a class="navlink" href="{{ url_for('done_todos') }}">DONE</a></div>
+                <div class="col-6 text-center"><a class="navlink active" href="{{ url_for('home') }}">OPEN</a></div>
+                <div class="col-6 text-center"><a class="navlink" href="{{ url_for('done_todos') }}">DONE</a></div>
               </div>
             </div>
           </div>
+
+          <br />
+          <br />
+          {% include "block_statistics.html" %}
 
           <h1 class="text-center display-1"> WHAT'S ON YOUR MIND?</h1>
           <p class="lead text-center"> Welcome to my To Do List Application, where u can free your mind. :)</p>
