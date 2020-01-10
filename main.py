@@ -6,6 +6,7 @@ from flask import render_template
 from flask import redirect
 from flask import url_for
 from libs import data
+from libs import statistics
 
 app = Flask("jasmins todo")
 app_main_path = Path(os.path.abspath("/".join(os.path.realpath(__file__).split("/")[:-1])))
@@ -27,7 +28,13 @@ def home():
             todolist['open'].append(new_todo)
             data.save_json(data_storage_file, todolist)
 
-    return render_template('index.html', open_todos=todolist["open"], error=error_message)
+    count_open = statistics.get_count_open(todolist)
+    count_done = statistics.get_count_done(todolist)
+    count_total = int(count_open+count_done)
+    percent_open = int(round(count_open / count_total * 100, 0))
+    percent_done = int(round(count_done / count_total * 100, 0))
+
+    return render_template('index.html', open_todos=todolist["open"], error=error_message, count_total=count_total, count_open=count_open, count_done=count_done, percent_open=percent_open, percent_done=percent_done)
     
 
 
@@ -61,7 +68,13 @@ def mark_as_open(todo_as_open=None):
 def done_todos():
     todolist = data.load_json(data_storage_file)
 
-    return render_template('done_todos.html', done_todos=todolist["done"])
+    count_open = statistics.get_count_open(todolist)
+    count_done = statistics.get_count_done(todolist)
+    count_total = int(count_open+count_done)
+    percent_open = int(round(count_open / count_total * 100, 0))
+    percent_done = int(round(count_done / count_total * 100, 0))
+
+    return render_template('done_todos.html', done_todos=todolist["done"], count_total=count_total, count_open=count_open, count_done=count_done, percent_open=percent_open, percent_done=percent_done)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
