@@ -48,16 +48,23 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
  
  1. Der Nutzer kann im Text-Feld sein Task erfassen und speichern (Submit) 
  
- 
+    ![todo_1](https://user-images.githubusercontent.com/55581677/72162226-d5639780-33c1-11ea-9651-ebf4e52a9b3c.jpg)
  
  
  2. Drückt der Nutzer auf "Submit" wird der Task unterhalb des Text- / Eingabefeldes aufgelistet. 
  
+    ![todo_2](https://user-images.githubusercontent.com/55581677/72162300-0217af00-33c2-11ea-9ff3-c77c485cb6df.jpg)
  
- 3. Mithilfe eines Counters wird dem Nutzer die Anzahl offenen Tasks und erledigten Tasks angezeigt. 
+ 
+ 3. Mithilfe eines Counters wird dem Nutzer die Anzahl offenen Tasks und erledigten Tasks angezeigt.
+ 
+    ![todo_3](https://user-images.githubusercontent.com/55581677/72162363-207daa80-33c2-11ea-8064-f4c03db9cfeb.jpg)
+    
  
  4. Hat der Nutzer einen Task erledigt und drückt auf "Done" wird der Task auf die Done Liste verschoben. 
     Die Done-Liste kann oben durch den Navigationsbutton "Done" aufgerufen werden. 
+    
+    ![todo_4](https://user-images.githubusercontent.com/55581677/72162382-2ecbc680-33c2-11ea-9127-f2ff7959342c.jpg)
     
     
  5. Will der Nutzer einen Task von der Done-Liste zurück zur ToDo-Liste verschieben, kann er ganz einfach den Button "Mark as 
