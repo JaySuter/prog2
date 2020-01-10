@@ -16,6 +16,13 @@ data_storage_file = data_path / "todolist.json"
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/open', methods=['GET', 'POST'])
 def home():
+    """
+    Show the home page when the url/route is '/' or '/home'.
+    On the home page all todos will be shown which are open.
+
+    Returns:
+        template: The template index.html will be rendered with all open todos and the statistics.
+    """
     error_message = None
     todolist = data.load_json(data_storage_file)
 
@@ -38,8 +45,38 @@ def home():
     
 
 
+@app.route('/done')
+def done_todos():
+    """
+    Show the done page when the url/route is '/done'.
+    On the done page all todos will be shown which are done.
+
+    Returns:
+        template: The template done_todos.html will be rendered with all done todos and the statistics.
+    """
+    todolist = data.load_json(data_storage_file)
+
+    count_open = statistics.get_count_open(todolist)
+    count_done = statistics.get_count_done(todolist)
+    count_total = int(count_open+count_done)
+    percent_open = int(round(count_open / count_total * 100, 0))
+    percent_done = int(round(count_done / count_total * 100, 0))
+
+    return render_template('done_todos.html', done_todos=todolist["done"], count_total=count_total, count_open=count_open, count_done=count_done, percent_open=percent_open, percent_done=percent_done)
+
+
+
 @app.route('/mark_as_done/<todo_as_done>')
 def mark_as_done(todo_as_done=None):
+    """
+    Marks an open todo item as done.
+
+    Args:
+        todo_as_done: name of the open todo item
+
+    Returns:
+        redirect: The user will be redirected to the home page.
+    """
     todolist = data.load_json(data_storage_file)
 
     if todo_as_done:
@@ -51,8 +88,18 @@ def mark_as_done(todo_as_done=None):
     return redirect(url_for('home'))
 
 
+
 @app.route('/mark_as_open/<todo_as_open>')
 def mark_as_open(todo_as_open=None):
+    """
+    Marks a done todo item as open.
+
+    Args:
+        todo_as_open: name of the done todo item
+
+    Returns:
+        redirect: The user will be redirected to the done_todos page.
+    """
     todolist = data.load_json(data_storage_file)
 
     if todo_as_open:
@@ -63,18 +110,6 @@ def mark_as_open(todo_as_open=None):
     
     return redirect(url_for('done_todos'))
 
-
-@app.route('/done', methods=['GET', 'POST'])
-def done_todos():
-    todolist = data.load_json(data_storage_file)
-
-    count_open = statistics.get_count_open(todolist)
-    count_done = statistics.get_count_done(todolist)
-    count_total = int(count_open+count_done)
-    percent_open = int(round(count_open / count_total * 100, 0))
-    percent_done = int(round(count_done / count_total * 100, 0))
-
-    return render_template('done_todos.html', done_todos=todolist["done"], count_total=count_total, count_open=count_open, count_done=count_done, percent_open=percent_open, percent_done=percent_done)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
