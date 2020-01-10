@@ -7,6 +7,14 @@ body {
     font-size: 1.5rem;
   }
 
+  a.navlink {
+    font-size: 40px;
+    color: white;
+  }
+  a.navlink.active {
+    text-decoration: underline;
+  }
+
 .hero {
     background-color: rgba(3,3,3, 0.5);
     min-height: 100vh;
@@ -14,6 +22,7 @@ body {
     top: 0;
     bottom: 0;
     position: absolute;
+    overflow-y: scroll !important;
   }
 
 h1 {

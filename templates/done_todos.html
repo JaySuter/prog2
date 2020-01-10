@@ -6,7 +6,7 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">-->
-    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 
   <!--Style muss immer in der Head-Section sein-->
  
@@ -14,10 +14,20 @@
   
   <body>
 <!-- div class="hero" macht einen (transparenten) Filter über das Hintergrundbild. So wirkt es etwas abgedunkelt.-->
-    <div class="hero" style="overflow-y: scroll !important">
+    <div class="hero">
         <div class="container">
-            <h1 class="text-center display-1">DONE TODOS</h1>
-            <p class="lead text-center"> These are all your done ToDos</p>
+          <br />
+          <div class="row">
+            <div class="col-8 mx-auto">
+              <div class="row">
+                <div class="col-4 mx-auto"><a class="navlink" href="{{ url_for('home') }}">OPEN</a></div>
+                <div class="col-4"><a class="navlink active" href="{{ url_for('done_todos') }}">DONE</a></div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="text-center display-1">DONE TODOS</h1>
+          <p class="lead text-center"> These are all your done ToDos</p>
 
           {% if done_todos %}
               <div class="row">
