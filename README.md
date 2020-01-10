@@ -35,19 +35,19 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
 
 * #### Datenverarbeitung / Speicherung
   *	Speichern der erstellten Tasks (submit)
-  * Ein erledigter Task mit "Done" markieren --> Wird auf Done Liste verschoben. 
-  * Berechnung des Prozentsatzes wieviele Tasks schon erledigt sind oder noch zu erledigen sind. 
+  * Ein erledigter Task mit "Done" markieren --> Wird auf Done-Liste verschoben. 
+  * Berechnung des Prozentsatzes wieviele Tasks schon erledigt sind, oder noch zu erledigen sind. 
   
   
 * #### Datenausgabe 
-  *	Erstellter Task anzeigen. 
+  *	Erstellter Task anzeigen 
   * Prozentanzahl der zu erledigen Tasks und der erledigten Tasks angezeigen. 
 
  
  
  ### Benutzeranleitung 
  
- Die Webappliaktion ist sehr schlicht gehalten und ganz einfach zu bedienen. 
+ Die Webappliaktion ist bewusst sehr schlicht gehalten und ganz einfach zu bedienen:  
  
  1. Der Nutzer kann im Text-Feld sein Task erfassen und speichern (Submit) 
  
