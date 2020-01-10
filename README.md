@@ -18,7 +18,7 @@ Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlage
 
 ### Funktion / Projektidee  
 
-Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks verschoben werden. 
+Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks zu verschieben. 
 Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. 
 
 
