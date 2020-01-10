@@ -56,7 +56,7 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
  
  2. Drückt der Nutzer auf "Submit" wird der Task unterhalb des Text- / Eingabefeldes aufgelistet. 
  
-    ![todo_2](https://user-images.githubusercontent.com/55581677/72162300-0217af00-33c2-11ea-9ff3-c77c485cb6df.jpg)
+    ![todo_2](https://user-images.githubusercontent.com/55581677/72163305-e31a1c80-33c3-11ea-9161-d6d599ccf052.jpg)
  
  
  3. Mithilfe eines Counters wird dem Nutzer die Anzahl offenen Tasks und erledigten Tasks angezeigt.
