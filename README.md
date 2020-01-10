@@ -64,7 +64,7 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
     ![todo_3](https://user-images.githubusercontent.com/55581677/72162363-207daa80-33c2-11ea-8064-f4c03db9cfeb.jpg)
     
  
- 4. Hat der Nutzer einen Task erledigt und drückt auf "Done" wird der Task auf die Done Liste verschoben. 
+ 4. Hat der Nutzer einen Task erledigt und drückt auf "Done" wird der Task auf die Done-Liste verschoben. 
     Die Done-Liste kann oben durch den Navigationsbutton "Done" aufgerufen werden. 
     
     ![todo_4](https://user-images.githubusercontent.com/55581677/72163441-24aac780-33c4-11ea-9800-5b315241d147.jpg)
