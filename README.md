@@ -26,7 +26,7 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
   *	Erstellen verschiedener Aufgaben / Tasks 
 
   ##### Erstellen eines neuen tasks 
-  ![](doku/Flowchart.png)
+  ![flowchart](https://user-images.githubusercontent.com/55581677/72160268-53be3a80-33be-11ea-9975-a31ec29f4a05.png)
 
 
 * #### Datenverarbeitung / Speicherung
