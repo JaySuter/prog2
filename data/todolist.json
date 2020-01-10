@@ -1,4 +1,9 @@
 {
-    "open":["Englisch machen", "prog machen"],
-    "done":["NENT machen", "asd"]
+    "open": [
+        "NENT machen",
+        "Englisch machen"
+    ],
+    "done": [
+        "prog machen"
+    ]
 }
