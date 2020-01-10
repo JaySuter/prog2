@@ -5,8 +5,7 @@
     <title>To Do list</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">-->
-    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 
   <!--Style muss immer in der Head-Section sein-->
  
@@ -14,27 +13,34 @@
   
   <body>
 <!-- div class="hero" macht einen (transparenten) Filter über das Hintergrundbild. So wirkt es etwas abgedunkelt.-->
-    <div class="hero">
+    <div class="hero" style="overflow-y: scroll !important">
         <div class="container">
             <h1 class="text-center display-1"> WHAT'S ON YOUR MIND?</h1>
             <p class="lead text-center"> Welcome to my To Do List Application, where u can free your mind. :)</p>
             <div class="row">
         <!--mx-auto zentriert die Einfüge-Box-->
-                <form class="col-8 mx-auto">
+                <form class="col-8 mx-auto" method="post">
                     <div class="input-group">
         <!--Input-group = Button kommt rechts neben Einfüge-Box-->
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What to do?"> 
+                      <input type="text" class="form-control" name="todo_text" placeholder="What to do?"> 
                       <span><button type="submit" class="btn btn-primary">Submit</button></span>
         <!--Span (Inline-Element) hilft mir, um Elemente für Stylingzwecke zu gruppieren-->
                     </div>
-                    
                   </form>
-      
             </div>
+
+            <div class="row">
+              <div class="mx-auto error_message" style="background-color: rebeccapurple; color: lightgrey; padding: 0 10px 0 10px;">
+                {% if error != None %}
+                  {{ error }}
+                {% endif %}
+              </div>
+            </div>
+
             <div class="row">
               <ul class="col-8 mx-auto">
                 {% for todo in open_todos %}
-                   <li>{{ todo }} <input type="checkbox" aria-label="Checkbox for following text input"> </li>
+                   <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_done', todo_as_done=todo) }}" class="btn btn-primary">Done</a></span></li>
                 {% endfor %}
               </ul> 
             </div>
