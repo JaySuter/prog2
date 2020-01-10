@@ -1,9 +1,10 @@
 {
     "open": [
-        "NENT machen",
-        "prog machen",
-        "asd",
-        "Englisch machen"
+        "test 3"
     ],
-    "done": []
+    "done": [
+        "asd",
+        "NENT machen",
+        "prog machen"
+    ]
 }

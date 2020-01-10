@@ -19,7 +19,7 @@ body {
 
 h1 {
     color: white;
-    margin-top: 14rem;
+    margin-top: 6rem;
     margin-bottom: 0px;   
 }
 
@@ -66,6 +66,10 @@ a.navlink {
 }
 a.navlink.active {
   text-decoration: underline;
+}
+
+.todo_counter {
+  color: white;
 }
 
 .error_message {
