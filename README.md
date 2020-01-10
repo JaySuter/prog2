@@ -20,13 +20,15 @@ Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlage
 Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks verschoben werden. 
 Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. 
 
+
 ### Workflow: 
+
+##### Task erstellen, speichern und als erledigt markieren 
+  ![flowchart](https://user-images.githubusercontent.com/55581677/72160268-53be3a80-33be-11ea-9975-a31ec29f4a05.png)
+
 
 * #### Dateneingabe
   *	Erstellen verschiedener Aufgaben / Tasks 
-
-  ##### Erstellen eines neuen Tasks 
-  ![flowchart](https://user-images.githubusercontent.com/55581677/72160268-53be3a80-33be-11ea-9975-a31ec29f4a05.png)
 
 
 * #### Datenverarbeitung / Speicherung
@@ -39,3 +41,28 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
   *	Erstellter Task anzeigen. 
   * Prozentanzahl der zu erledigen Tasks und der erledigten Tasks angezeigen. 
 
+ 
+ ### Benutzeranleitung 
+ 
+ Die Webappliaktion ist sehr schlicht gehalten und ganz einfach zu bedienen. 
+ 
+ 1. Der Nutzer kann im Text-Feld sein Task erfassen und speichern (Submit) 
+ 
+ 
+ 
+ 
+ 2. Drückt der Nutzer auf "Submit" wird der Task unterhalb des Text- / Eingabefeldes aufgelistet. 
+ 
+ 
+ 3. Mithilfe eines Counters wird dem Nutzer die Anzahl offenen Tasks und erledigten Tasks angezeigt. 
+ 
+ 4. Hat der Nutzer einen Task erledigt und drückt auf "Done" wird der Task auf die Done Liste verschoben. 
+    Die Done-Liste kann oben durch den Navigationsbutton "Done" aufgerufen werden. 
+    
+    
+ 5. Will der Nutzer einen Task von der Done-Liste zurück zur ToDo-Liste verschieben, kann er ganz einfach den Button "Mark as 
+    undone" drücken und der Task erscheint wieder auf der Open-Liste. 
+    
+    
+ 
+ 
