@@ -67,7 +67,7 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
  4. Hat der Nutzer einen Task erledigt und drückt auf "Done" wird der Task auf die Done Liste verschoben. 
     Die Done-Liste kann oben durch den Navigationsbutton "Done" aufgerufen werden. 
     
-    ![todo_4](https://user-images.githubusercontent.com/55581677/72162382-2ecbc680-33c2-11ea-9127-f2ff7959342c.jpg)
+    ![todo_4](https://user-images.githubusercontent.com/55581677/72163441-24aac780-33c4-11ea-9800-5b315241d147.jpg)
     
     
  5. Will der Nutzer einen Task von der Done-Liste zurück zur ToDo-Liste verschieben, kann er ganz einfach den Button "Mark as 
