@@ -37,13 +37,22 @@
               </div>
             </div>
 
-            <div class="row">
-              <ul class="col-8 mx-auto">
-                {% for todo in open_todos %}
-                   <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_done', todo_as_done=todo) }}" class="btn btn-primary">Done</a></span></li>
-                {% endfor %}
-              </ul> 
-            </div>
+            {% if open_todos %}
+              <div class="row">
+                <ul class="col-8 mx-auto">
+                  {% for todo in open_todos %}
+                    <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_done', todo_as_done=todo) }}" class="btn btn-primary">Done</a></span></li>
+                  {% endfor %}
+                </ul> 
+              </div>
+            {% else %}
+              <br />
+              <div class="row">
+                <div class="mx-auto error_message" style="background-color: rebeccapurple; color: lightgrey; padding: 0 10px 0 10px;">
+                  No open ToDos
+                </div>
+              </div>
+            {% endif %}
           </div>
 
     </div>

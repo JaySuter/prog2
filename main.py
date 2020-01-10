@@ -44,6 +44,19 @@ def mark_as_done(todo_as_done=None):
     return redirect(url_for('home'))
 
 
+@app.route('/mark_as_open/<todo_as_open>')
+def mark_as_open(todo_as_open=None):
+    todolist = data.load_json(data_storage_file)
+
+    if todo_as_open:
+        if todo_as_open in todolist['done']:
+            todolist['done'].remove(todo_as_open)
+            todolist['open'].append(todo_as_open)
+            data.save_json(data_storage_file, todolist)
+    
+    return redirect(url_for('done_todos'))
+
+
 @app.route('/done', methods=['GET', 'POST'])
 def done_todos():
     todolist = data.load_json(data_storage_file)

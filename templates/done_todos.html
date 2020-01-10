@@ -18,32 +18,24 @@
         <div class="container">
             <h1 class="text-center display-1">DONE TODOS</h1>
             <p class="lead text-center"> These are all your done ToDos</p>
-            <div class="row">
-        <!--mx-auto zentriert die Einfüge-Box-->
-                <form class="col-8 mx-auto">
-                    <div class="input-group">
-        <!--Input-group = Button kommt rechts neben Einfüge-Box-->
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What to do?"> 
-                      <span><button type="submit" class="btn btn-primary">Submit</button></span>
-        <!--Span (Inline-Element) hilft mir, um Elemente für Stylingzwecke zu gruppieren-->
-                    </div>
-                    
-                  </form>
-      
-            </div>
-            <div class="row">
-              <ul class="col-8 mx-auto">
-                {% for todo in done_todos %}
-                   <li>{{ todo }} <input type="checkbox" aria-label="Checkbox for following text input"> </li>
-                {% endfor %}
-              </ul> 
-            </div>
-          </div>
 
+          {% if done_todos %}
+              <div class="row">
+                <ul class="col-8 mx-auto">
+                  {% for todo in done_todos %}
+                    <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_open', todo_as_open=todo) }}" class="btn btn-primary">Mark as undone</a></span></li>
+                  {% endfor %}
+                </ul> 
+              </div>
+            </div>
+          {% else %}
+            <div class="row">
+              <div class="mx-auto error_message" style="background-color: rebeccapurple; color: lightgrey; padding: 0 10px 0 10px;">
+                No done ToDos
+              </div>
+            </div>
+          {% endif %}
     </div>
-
-     
-   
   </body>
 </html>
 
