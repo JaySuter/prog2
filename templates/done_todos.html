@@ -25,7 +25,9 @@
               <div class="row">
                 <ul class="col-8 mx-auto">
                   {% for todo in done_todos %}
-                    <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_open', todo_as_open=todo) }}" class="btn btn-primary">Mark as undone</a></span></li>
+                    <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_open', todo_as_open=todo) }}" class="btn btn-primary">Mark as undone</a></span>
+                      <a href="{{ url_for('delete_item', todo_as_open=todo) }}" class="btn btn-danger">Delete</a>
+                    </li>
                   {% endfor %}
                 </ul> 
               </div>

@@ -111,5 +111,28 @@ def mark_as_open(todo_as_open=None):
     return redirect(url_for('done_todos'))
 
 
+@app.route('/delete/<todo_as_open>')
+def delete_item(todo_as_open=None):
+    """
+    Marks a done todo item as open.
+
+    Args:
+        todo_as_open: name of the done todo item
+
+    Returns:
+        redirect: The user will be redirected to the done_todos page.
+    """
+    todolist = data.load_json(data_storage_file)
+
+    if todo_as_open:
+        if todo_as_open in todolist['done']:
+            todolist['done'].remove(todo_as_open)
+        elif todo_as_open in todolist['open']:
+            todolist['open'].remove(todo_as_open)
+        data.save_json(data_storage_file, todolist)
+    
+    return redirect(url_for('done_todos'))
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+
