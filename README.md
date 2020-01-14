@@ -67,13 +67,22 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
  4. Hat der Nutzer einen Task erledigt und drückt auf "Done" wird der Task auf die Done-Liste verschoben. 
     Die Done-Liste kann oben durch den Navigationsbutton "Done" aufgerufen werden. 
     
-    ![todo_4](https://user-images.githubusercontent.com/55581677/72163441-24aac780-33c4-11ea-9800-5b315241d147.jpg)
+    ![todo_4](https://user-images.githubusercontent.com/55581677/72376499-572f2a00-370e-11ea-8078-3cb4a753b6c1.jpg)
     
     
  5. Will der Nutzer einen Task von der Done-Liste zurück zur ToDo-Liste verschieben, kann er ganz einfach den Button "Mark as 
     undone" drücken und der Task erscheint wieder auf der Open-Liste. 
     
     ![todo_5](https://user-images.githubusercontent.com/55581677/72162629-9aae2f00-33c2-11ea-9157-a5803a19236b.jpg)
+    
+    
+ 6. Will der Nutzer einen Task von der Done-Liste löschen, kann er den "Delete"-Button klicken und der Task wird
+    unwiderruflich von der ToDo-Liste gelöscht. 
+    
+    ![todo_6](https://user-images.githubusercontent.com/55581677/72376566-6f06ae00-370e-11ea-8ecc-db402f30a564.jpg)
+
+    
+    
     
     
     
