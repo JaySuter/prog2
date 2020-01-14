@@ -40,9 +40,9 @@ ul {
   list-style: none;
   margin-top: 2rem;
   border-top: 2px solid white;
-  /* Damit die list items nicht angezeigt werden, solange man nichts eingegeben hat */
-  /* display: none; */
 }
+
+
 li {
   border-bottom: 1px solid white;
   padding-top: 0.5rem;

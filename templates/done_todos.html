@@ -1,7 +1,7 @@
 {% include "block_html_head.html" %}
   
   <body>
-<!-- div class="hero" macht einen (transparenten) Filter über das Hintergrundbild. So wirkt es etwas abgedunkelt.-->
+<!-- dic class="hero" lays a transparent filter over the background. This way the background is darker. -->
     <div class="hero">
         <div class="container">
           <br />
@@ -26,7 +26,7 @@
                 <ul class="col-8 mx-auto">
                   {% for todo in done_todos %}
                     <li>{{ todo }} <span style="float: right;"><a href="{{ url_for('mark_as_open', todo_as_open=todo) }}" class="btn btn-primary">Mark as undone</a></span>
-                      <a href="{{ url_for('delete_item', todo_as_open=todo) }}" class="btn btn-danger">Delete</a>
+                     <span style="float: right;"> <a href="{{ url_for('delete_item', todo_as_open=todo) }}" class="btn btn-danger">Delete</a></span>
                     </li>
                   {% endfor %}
                 </ul> 
