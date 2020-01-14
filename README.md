@@ -12,14 +12,14 @@ ToDo-Listen, die früher ausschliesslich mit Papier und Stift erstellt wurden, k
 **_Haken an der ganzen Sache?_**
 Will man eine vollumfängliche Applikation, die auf die eigenen Bedürfnisse angepasst ist und auch noch eine schöne Benutzeroberfläche hat, wird meist Geld gefordert. 
 
-Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlagen zum Programmieren einer Applikation aneignen und eine ToDo-Listen konstruieren. 
+Mit meiner Web-Applikation **«What’s on your mind?»** habe ich mir Grundlagen zum Programmieren einer Applikation angeeignet und eine simple ToDo-Listen konstruiert. 
 
 
 
 ### Funktion / Projektidee  
 
-Die Applikation sollte zur einfachen Erstellung von Aufgaben-Listen fähig sein. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks zu verschieben. 
-Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. 
+Die Applikation ist zur einfachen Erstellung von Aufgaben-Listen fähig. Das Selbstmanagement-Tool dient folglich als Plattform, Aufgaben zu sammeln und nach erfolgreicher Durchführung auf eine Liste mit den erledigten Tasks zu verschieben. 
+Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erledigt, oder noch zu tun sind. Erledigte Tasks können auch wieder zurück auf die Hauptseite der noch offenen Task verschoben oder gelöscht werden. 
 
 
 
@@ -35,13 +35,14 @@ Des Weiteren gibt die Plattform an, wieviele der aufgeführten Tasks bereits erl
 
 * #### Datenverarbeitung / Speicherung
   *	Speichern der erstellten Tasks (submit)
-  * Ein erledigter Task mit "Done" markieren --> Wird auf Done-Liste verschoben. 
+  * Ein erledigter Task mit "Done" markieren --> Wird auf Done-Liste verschoben.
+  * Erledigte Tasks, die auf die "Done"-Liste verschoben wurden, können auch ganz gelöscht werden. 
   * Berechnung des Prozentsatzes wieviele Tasks schon erledigt sind, oder noch zu erledigen sind. 
   
   
 * #### Datenausgabe 
   *	Erstellter Task anzeigen 
-  * Prozentanzahl der zu erledigen Tasks und der erledigten Tasks angezeigen. 
+  * Prozentanzahl der zu erledigen Tasks und der erledigten Tasks anzeigen. 
 
  
  
