@@ -12,7 +12,7 @@ ToDo-Listen, die früher ausschliesslich mit Papier und Stift erstellt wurden, k
 **_Haken an der ganzen Sache?_**
 Will man eine vollumfängliche Applikation, die auf die eigenen Bedürfnisse angepasst ist und auch noch eine schöne Benutzeroberfläche hat, wird meist Geld gefordert. 
 
-Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlagen zum Programmieren einer Applikation aneignen und eine ToDo-Listen mit Features nach meinen Wünschen konstruieren. 
+Mit meiner Web-Applikation **«What’s on your mind?»** will ich mir Grundlagen zum Programmieren einer Applikation aneignen und eine ToDo-Listen konstruieren. 
 
 
 
